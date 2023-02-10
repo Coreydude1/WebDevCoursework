@@ -10,7 +10,42 @@
 
         <nav> </nav>
 
-        <main> </main>
+        <main> 
+            <div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="img_gallery.html">Gallery</a></li>
+                    <li><a href="current_members.html">Current Members</a></li>
+                    <li><a href="event_calendar.html">Events</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <form>
+                    <fieldset>
+                        <legend>Contact Us using the form below.</legend>
+
+                        <label for="name">Name  : </label>
+                        <input type="text" name="name" value=""/><br/>
+
+                        <label for="email">Email  : </label>
+                        <input type="text" name="email" value=""/><br/>
+                        
+                        <label for="member">Membership Status  : Member </label>
+                        <input type="radio" id="member" name="membership" value="member"/>
+                        <label for="non-member"> Non-Member </label>
+                        <input type="radio" id="non-member" name="membership" value="non-member"/>
+                        <br/>
+
+                        <textarea name="comments" placeholder="Please tell us about why you want to contact us." style="width:100%; height:100px;"></textarea><br/>
+
+                        <label for="submitfile">Attach a file :  </label>
+                        <input type="file" id="submitfile" name="submitfile">
+                    </fieldset>
+                </form>
+            </div>
+        </main>
 
         <aside> </aside>
 
