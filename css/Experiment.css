@@ -3,10 +3,12 @@ body{
 }
 
 header{
-    background-color: #FFFFFF;
+    background-color: #eb14aa;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    padding: 10px;
+    border: 10px #26f51f solid;
+    padding: 20px;
+    margin: 30px;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -28,21 +30,16 @@ p {
 
 main{
     background-color: #FFFFFF;
-    padding: 10px;
-    overflow: hidden;
+    border-radius: 10px;
 }
 
 aside{
-    background-color: #FFFFFF;
-    padding: 10px;
-}
-
-nav{
-    padding: 10px;
+    background-color: #26f51f;
+    border-radius: 10px;
 }
 
 footer{
-    background-color: #0a9cf5;
+    background-color: #f50a0a;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -50,33 +47,21 @@ footer{
 }
 
 nav li{
-    border: 2px solid #003062;
+    border: 2px solid #eeff00;
     background-color: #0a9cf5;
     list-style-type: None;
-    float: left;
-    width: 16%;
-    padding: 16px;
 }
 
 nav li a{
     color: #FFFFFF;
+    text-align: center;
     text-decoration: None;
-}
-
-nav li :hover{
-    background-color: #000000;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #003062;
 }
 
 table{
     font-family: Verdana,monospace;
     border-collapse: collapse;
+    border: 3px #000000 solid;
 }
 
 table td, table th{
@@ -89,6 +74,7 @@ table tr:nth-child(even){
 
 table tr:hover{
     background-color: #b7c1de;
+    border: 3px #000000 solid;
 }
 
 table th {
@@ -96,35 +82,16 @@ table th {
     color: #FFFFFF;
 }
 
-fieldset {
-    width: 10%;
-}
-
 .active {
     background-color: #003062;
 }
 
-#logo {
-    width: 50px;
-    height: 50px;
+.column1{
+    width: 75%; 
     float: left;
-    margin-right: 10px;
 }
 
-#title {
-    display: inline;
-}
-
-#left-col{
+.column2{
+    width: 25%; 
     float: left;
-    overflow: hidden;
-    width: 75%;
-    border-radius: 0;
-}
-
-#right-col{
-    float: left;
-    overflow: hidden;
-    width: 20%;
-    border-radius: 0;
 }
