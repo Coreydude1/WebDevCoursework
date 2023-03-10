@@ -7,6 +7,7 @@ header{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     padding: 10px;
+    margin: 12px 12px 0px 12px;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -34,15 +35,17 @@ main{
     background-color: #FFFFFF;
     padding: 10px;
     overflow: hidden;
+    margin: 0px 12px 0px 12px;
 }
 
 aside{
     background-color: #FFFFFF;
     padding: 10px;
+    margin: 12px;
 }
 
 nav{
-    padding: 10px;
+    margin: 0px 12px 0px 12px;
 }
 
 footer{
@@ -58,9 +61,8 @@ nav li{
     background-color: #0a9cf5;
     list-style-type: None;
     float: left;
-    width: 13%;
+    width: 16%;
     padding: 18px;
-    height: 18px;
 }
 
 nav li a{
@@ -122,6 +124,37 @@ fieldset {
 
 .news-summary h5{
     margin: 18px 0px 18px 0px;
+}
+
+.carousel-item {
+    height: 800px;
+    background-color: #b7c1de;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background-color: rgba(10, 156, 245, 0.75);
+    border-radius: 25px;
+}
+
+.carousel-caption p{
+    font-weight: bold;
+}
+
+.gallery-img{
+    width: 100%;
+}
+
+#img-gallery{
+    padding-top: 10px;
+}
+
+#img-gallery .row {
+    margin-bottom: 10px;
 }
 
 #logo {
