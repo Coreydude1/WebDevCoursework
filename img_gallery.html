@@ -66,5 +66,30 @@
         <footer>
             <p>Copyright Corey Gardner</p>
         </footer>
+        
+        <script>
+            var elements = document.getElementsByClassName("gallery-img");
+
+            for(let element of elements){
+                element.addEventListener("mouseover", function(){
+                    element.style="border: solid blue 4px;"
+                    element.style="transition: border 2s;"
+                    for(let otherElement of elements){
+                        if(element != otherElement){
+                            otherElement.style="filter: blur(5px);"
+                        }
+                    }
+                });
+                
+                element.addEventListener("mouseout", function(){
+                    element.style="border: none;"
+                    for(let otherElement of elements){
+                        if(element != otherElement){
+                            otherElement.style="filter: none;"
+                        }
+                    }
+                });
+            }
+        </script>
     </body>
 </html>

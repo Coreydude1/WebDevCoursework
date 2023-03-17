@@ -7,9 +7,17 @@
     </head>
 
     <body>
+        <script src="scripts/myScript.js"></script>
+
         <header> 
             <img src="images/Logo.png" alt="AI brain logo" id="logo">
             <h1 id="title">Artificial Intelligence Society</h1> 
+
+            <div id="login">
+                <input type="text" id="email" placeholder="Email"></input>
+                <input type="password" id="password" placeholder="Password"></input>
+                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+            </div>
         </header>
 
         <nav> 

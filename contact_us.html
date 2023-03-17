@@ -5,6 +5,7 @@
     </head>
 
     <body>
+        <script src="scripts/myScript.js"></script>
         <header> 
             <img src="images/Logo.png" alt="AI brain logo" id="logo">
             <h1 id="title">Artificial Intelligence Society</h1> 
@@ -44,9 +45,14 @@
                         <textarea name="comments" placeholder="Please tell us about why you want to contact us." style="width:100%; height:100px;"></textarea><br/>
 
                         <label for="submitfile">Attach a file :  </label>
-                        <input type="file" id="submitfile" name="submitfile">
+                        <input type="file" id="submitfile" name="submitfile"></br>
+
+                        <button type="button" onclick="send_form('form_outcome', 'Form has been sent successfully.')">Submit</button>
                     </fieldset>
                 </form>
+                <div>
+                    <p id="form_outcome"></p>
+                </div>
             </div>
             <div id="right-col">
                 <h3>Latest Tweets</h3>
