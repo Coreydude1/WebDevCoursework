@@ -1,3 +1,4 @@
+/* Generic CSS */
 body{
     background-color: #b7c1de;
 }
@@ -49,16 +50,17 @@ nav{
 }
 
 footer{
-    background-color: #0a9cf5;
+    background-color: #0A98F0;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
+/* Navigation Bar */
 nav li{
     border: 3px solid #003062;
-    background-color: #0a9cf5;
+    background-color: #0A98F0;
     list-style-type: None;
     float: left;
     width: 16%;
@@ -81,6 +83,8 @@ nav ul{
     background-color: #003062;
 }
 
+
+/* Event Table */
 table{
     font-family: Verdana,monospace;
     border-collapse: collapse;
@@ -99,18 +103,21 @@ table tr:hover{
 }
 
 table th {
-    background-color: #0a9cf5;
+    background-color: #0A98F0;
     color: #FFFFFF;
 }
 
+/* Contact Us Form */
 fieldset {
     width: 80%;
 }
 
+/* Navigation Bar */
 .active {
     background-color: #003062;
 }
 
+/* News Articles */
 .news-summary {
     width: 50%;
     float: left;
@@ -126,6 +133,7 @@ fieldset {
     margin: 18px 0px 18px 0px;
 }
 
+/* Index Carousel */
 .carousel-item {
     height: 800px;
     background-color: #b7c1de;
@@ -137,7 +145,7 @@ fieldset {
 }
 
 .carousel-caption {
-    background-color: rgba(10, 156, 245, 0.75);
+    background-color: rgba(10, 156, 245, 0.85);
     border-radius: 25px;
 }
 
@@ -145,6 +153,11 @@ fieldset {
     font-weight: bold;
 }
 
+.btn-primary {
+    background-color: #003062;
+}
+
+/* Image Gallery */
 .gallery-img{
     width: 100%;
 }
@@ -157,11 +170,13 @@ fieldset {
     margin-bottom: 10px;
 }
 
+/* login */
 #login {
     float: right;
     height: 36pt;
 }
 
+/* Logo and Title */
 #logo {
     width: 50px;
     height: 50px;
@@ -173,6 +188,7 @@ fieldset {
     display: inline;
 }
 
+/* Contact Us Formatting */
 #left-col{
     float: left;
     overflow: hidden;
@@ -187,6 +203,7 @@ fieldset {
     border-radius: 0;
 }
 
+/* News Article Formatting */
 #column-box {
     margin: 3%;
     padding: 10px;
@@ -196,5 +213,29 @@ fieldset {
     object-fit: cover;
     width: 200px;
     height: 200px;
+    float: left;
+}
+
+/* Article Formatting */
+
+#article{
+    padding: 10px;
+}
+
+#article-image{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    float: right;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+#article-title{
+    float: left;
+    padding-right: 65%;
+}
+
+#article-body{
     float: left;
 }
