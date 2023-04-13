@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Artificial Intelligence Society</title>
+        <title>Cyberpunk Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
         <meta charset="utf-8">
     </head>
@@ -23,12 +25,12 @@
         <!-- Navigation Bar-->
         <nav> 
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="nav_button"><a href="index.html">Home</a></li>
                 <li class="active"><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="news.html">News</a></li>
+                <li class="nav_button"><a href="current_members.html">Current Members</a></li>
+                <li class="nav_button"><a href="event_calendar.html">Events</a></li>
+                <li class="nav_button"><a href="contact_us.html">Contact Us</a></li>
+                <li class="nav_button"><a href="news.html">News</a></li>
             </ul>
         </nav>
 
@@ -37,32 +39,32 @@
             <div id = "img-gallery" class = "container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/Atlas.jpg" alt="Bostons Atlas Robot" class="gallery-img">
+                        <img src="images/City1.png" alt="Bostons Atlas Robot" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/RNNStockPrediction.png" alt="Graph of AI predicting stocks" class="gallery-img">
+                        <img src="images/City2.png" alt="Graph of AI predicting stocks" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/SelfDrivingCar.jpg" alt="Self Driving Cars" class="gallery-img">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <img src="images/NeuralNetwork.png" alt="Neural Network" class="gallery-img">
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/HideAndSeek.jpeg" alt="AI Playing Hide and Seek" class="gallery-img">
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/Generated.jpg" alt="AI Generated Image" class="gallery-img">
+                        <img src="images/Neuromancer-Cover1.png" alt="Self Driving Cars" class="gallery-img">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/MarIo.jpg" alt="AI Playing Mairo" class="gallery-img">
+                        <img src="images/KangTaoCharacters.png" alt="Neural Network" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/VoiceAssistants.jpg" alt="Voice Assistants" class="gallery-img">
+                        <img src="images/ghostintheshell.png" alt="AI Playing Hide and Seek" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/Arasaka Characte4rs.png" alt="AI Generated Image" class="gallery-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Cooking.png" alt="AI Playing Mairo" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/CyberneticProgramming.png" alt="Voice Assistants" class="gallery-img">
                     </div>
                     <div class="col-sm">
                         <img src="images/ObjectDetection.png" alt="Diffrent AI Object Detections" class="gallery-img">
@@ -76,6 +78,7 @@
             <p>Copyright Corey Gardner</p>
         </footer>
         
+        <script src="scripts/script.js"></script>
         <script>
             //Gets all gallery images
             var elements = document.getElementsByClassName("gallery-img");
@@ -92,7 +95,7 @@
                 });
                 
                 element.addEventListener("mouseout", function(){
-                    element.style="border: none;"
+                    element.style="border: solid #5D1309 4px;"
                     for(let otherElement of elements){
                         if(element != otherElement){
                             otherElement.style="filter: none;"
