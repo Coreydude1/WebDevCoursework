@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Artificial Intelligence Society</title>
+        <title>Cyberpunk Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
         <meta charset="utf-8">
     </head>
@@ -9,63 +11,74 @@
     <body>
         <header> 
             <!-- Logo and Title-->
-            <img src="images/Logo.png" alt="AI brain logo" id="logo">
-            <h1 id="title">Artificial Intelligence Society</h1> 
+            <img src="images/Logo.png" alt="Arasaka Logo" id="logo">
+            <h1 id="title">Cyberpunk Society</h1> 
 
             <!-- log in form-->
             <div id="login">
                 <input type="text" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
             </div>
         </header>
 
         <!-- Navigation Bar-->
         <nav> 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="news.html">News</a></li>
-            </ul>
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="active">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="nav_button">Books</div></a>
         </nav>
 
         <main> 
             <!--Image Gallery-->
+            <!--Gallery will be 3 images wide-->
             <div id = "img-gallery" class = "container">
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/Atlas.jpg" alt="Bostons Atlas Robot" class="gallery-img">
+                        <img src="images/City1.png" alt="Image of man Sitting on car ouside city" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/RNNStockPrediction.png" alt="Graph of AI predicting stocks" class="gallery-img">
+                        <img src="images/City2.png" alt="Women posing in the city" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/SelfDrivingCar.jpg" alt="Self Driving Cars" class="gallery-img">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <img src="images/NeuralNetwork.png" alt="Neural Network" class="gallery-img">
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/HideAndSeek.jpeg" alt="AI Playing Hide and Seek" class="gallery-img">
-                    </div>
-                    <div class="col-sm">
-                        <img src="images/Generated.jpg" alt="AI Generated Image" class="gallery-img">
+                        <img src="images/Neuromancer-Cover1.png" alt="Cover of Neuromancer" class="gallery-img">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm">
-                        <img src="images/MarIo.jpg" alt="AI Playing Mairo" class="gallery-img">
+                        <img src="images/KangTaoCharacters.png" alt="Characters from Kang Tao in Cyberpunk 2077" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/VoiceAssistants.jpg" alt="Voice Assistants" class="gallery-img">
+                        <img src="images/ghostintheshell.png" alt="Image of robot from ghost in the shell" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/ObjectDetection.png" alt="Diffrent AI Object Detections" class="gallery-img">
+                        <img src="images/ArasakaCharacters.png" alt="Characters from Arasaka in Cyberpunk 2077" class="gallery-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/Cooking.png" alt="Graphic of man cooking in hightech microwave" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/CyberneticProgramming.png" alt="Artwork of a cybernetic women typing" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/City3.jpg" alt="Man overlooking Cyberpunk City" class="gallery-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/do-androids-dream-of-electric-sheep-omnibus-1.png" alt="Cover of Do Andoids Dream of Electric Sheep?" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/SnowCrash.jpg" alt="Cover of Snow Crash" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        
                     </div>
                 </div>
             </div>
@@ -76,14 +89,16 @@
             <p>Copyright Corey Gardner</p>
         </footer>
         
+        <!--Loads the script adding the highlight to the navbar-->
+        <script src="scripts/script.js"></script>
         <script>
             //Gets all gallery images
             var elements = document.getElementsByClassName("gallery-img");
 
-            //loops through all images adding the mouseover and mouseout functions
+            //loops through all images adding the mouseover and mouseout functions causing a border to appear when the mouse is over an image
             for(let element of elements){
                 element.addEventListener("mouseover", function(){
-                    element.style="border: solid #003062 4px;"
+                    element.style="border: solid #7ddde8 4px;"
                     for(let otherElement of elements){
                         if(element != otherElement){
                             otherElement.style="filter: blur(5px);"
@@ -92,7 +107,7 @@
                 });
                 
                 element.addEventListener("mouseout", function(){
-                    element.style="border: none;"
+                    element.style="border: solid #5D1309 4px;"
                     for(let otherElement of elements){
                         if(element != otherElement){
                             otherElement.style="filter: none;"

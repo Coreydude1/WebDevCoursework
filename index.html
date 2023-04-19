@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Artificial Intelligence Society</title>
+        <title>Cyberpunk Society</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
@@ -9,37 +9,34 @@
     </head>
 
     <body>
-        <script src="scripts/myScript.js"></script>
-
         <header> 
             <!-- Logo and Title-->
-            <img src="images/Logo.png" alt="AI brain logo" id="logo">
-            <h1 id="title">Artificial Intelligence Society</h1> 
+            <img src="images/Logo.png" alt="Arasaka Logo" id="logo">
+            <h1 id="title">Cyberpunk Society</h1> 
 
             <!-- log in form-->
             <div id="login">
                 <input type="text" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
             </div>
         </header>
 
         <!-- Navigation Bar-->
         <nav> 
-            <ul>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="news.html">News</a></li>
-            </ul>
+            <a href="index.html"><div class="active">Home</div></a>
+            <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="nav_button">Books</div></a>
         </nav>
 
         <main> 
             <!--Welcome Message-->
             <div>
-                <h3>Welcome to the Artificial Intelligence Society.</h3>
+                <h3>Welcome to the Cyberpunk Society.</h3>
                 <p>At the Artificial Intelligence Society we dedicate ourselves to following and understanding the latest news regarding facinating topics such as machine learning models, self driving cars, video game AI, and realistic humanoid robots.</p>
             </div>
 
@@ -56,31 +53,31 @@
                     
                     <!-- Item 1 -->
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="images/MarIo.jpg" alt="Mario AI">
+                        <img class="d-block w-100" src="images/City1.png" alt="Image of man Sitting on car ouside city">
                         <div class="carousel-caption">
-                            <h5>MarI/O</h5>
-                            <p>Watch this video where an AI learns to play Mario.</p>
+                            <h5>Cyberpunk 2077</h5>
+                            <p>Watch this video showcasing Nightcity in Cyberpunk 2077.</p>
                             <p>
-                                <a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=qv6UVOQ0F44" role="button">Watch Here</a>
+                                <a class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=oVKl9e3gSAE" role="button">Watch Here</a>
                             </p>
                         </div>
                     </div>
                     
                     <!-- Item 2 -->
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/ObjectDetection.png" alt="Examples of Object Detection">
+                        <img class="d-block w-100" src="images/Neuromancer-Cover1.png" alt="Cover of Neuromancer">
                         <div class="carousel-caption">
-                            <h5>Object Detection</h5>
-                            <p>Here we can see some of the diffrent ways we can detect objects.</p>
+                            <h5>Neuromancer</h5>
+                            <p>Here we can see Neuromancer a foundational piece of literature for the Cyberpunk genre.</p>
                         </div>
                     </div>
                     
                     <!-- Item 3 -->
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="images/Generated.jpg" alt="AI generated Art">
+                        <img class="d-block w-100" src="images/Cooking.png" alt="Graphic of man cooking in hightech microwave">
                         <div class="carousel-caption">
-                            <h5>AI Genereated Image</h5>
-                            <p>Here we can see an example of AI generated art.</p>
+                            <h5>Cyberpunk Art</h5>
+                            <p>Here we can see an example of Cyberpunk art.</p>
                         </div>
                     </div>
                 </div>
@@ -95,11 +92,41 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
             </div>
+
+            <!--Latest News-->
+            <div id="latestNews">
+                <h3>News Articles</h3>
+
+                <!--List of articles-->
+                <!--Each article will have a title, image and a body of text-->
+                <a href="Article1.html">
+                    <div class = "column-box">
+                        <img src="images/KangTaoCharacters.png" alt="Characters from Kang Tao in Cyberpunk 2077">
+                        <div class = "news-summary">
+                            <h5>Cyberpunk 2077 receives major update, introducing new features and fixing bugs!</h5>
+                            <p>After months of anticipation, Cyberpunk 2077 players can finally rejoice as the game's developer, CD Projekt Red, has released a major update that promises to fix many of the game's issues and introduces exciting new features. <br><br>The update includes a range of bug fixes and improvements. One of the most notable changes is the improvement of the driving mechanics. Many players have complained that the driving in the game was difficult and frustrating, but now it is much smoother and more enjoyable. <br><br>The update also introduces new weapons, armor, and vehicles. There are now more options for players to customize their characters and make them more powerful. The game's graphics have also been improved, making Night City look even more impressive and immersive. <br><br>Overall, this update is a major step forward for Cyberpunk 2077. CD Projekt Red has listened to the feedback from players and worked hard to address the game's issues. With the addition of new features and improvements, Cyberpunk 2077 is now a more enjoyable and exciting experience than ever before.</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="Article2.html">
+                    <div class = "column-box">
+                        <img src="images/Cooking.png" alt= "Graphic of man cooking in hightech microwave">
+                        <div class = "news-summary">
+                            <h5>Cyberpunk 2077: A Game-Changer in the RPG Genre</h5>
+                            <p>Cyberpunk 2077 is a futuristic open-world RPG game that has taken the gaming world by storm. Developed by CD Projekt Red, this game has become one of the most anticipated and talked-about releases in recent years. <br><br>Set in a dystopian future, the game immerses players in the dark and gritty world of Night City, a metropolis where corporations rule and gangs fight for control. The game allows players to create their own character and play through a compelling story filled with twists, turns, and moral dilemmas. <br><br>What sets Cyberpunk 2077 apart from other RPGs is its attention to detail and immersive gameplay. The game features stunning graphics, realistic physics, and a massive open world filled with NPCs, side quests, and hidden secrets. The game also features a deep and complex crafting system, allowing players to customize their weapons and gear to suit their playstyle. <br><br>The game's characters are also a major highlight. From the charismatic and enigmatic Johnny Silverhand, played by Keanu Reeves, to the complex and tragic character of Jackie Welles, the game's cast of characters is diverse, compelling, and memorable. <br><br>While the game faced some criticism for its technical issues at launch, CD Projekt Red has worked hard to address these issues and has released several major updates that have improved the game's performance and fixed many of its bugs. <br><br>Overall, Cyberpunk 2077 is a game-changer in the RPG genre. It pushes the boundaries of what is possible in a video game, immersing players in a world that is both thrilling and thought-provoking. If you haven't played it yet, now is the time to dive into Night City and experience one of the most ambitious games of the decade.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </main>
 
         <footer>
             <!-- Copyright-->
             <p>Copyright Corey Gardner</p>
         </footer>
+
+        <!--Loads the script adding the highlight to the navbar-->
+        <script src="scripts/script.js"></script>
     </body>
 </html>

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Artificial Intelligence Society</title>
+        <title>Cyberpunk Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/main.css">
         <meta charset="utf-8">
     </head>
@@ -11,28 +13,27 @@
         
         <header> 
             <!-- Logo and Title-->
-            <img src="images/Logo.png" alt="AI brain logo" id="logo">
-            <h1 id="title">Artificial Intelligence Society</h1> 
+            <img src="images/Logo.png" alt="Arasaka Logo" id="logo">
+            <h1 id="title">Cyberpunk Society</h1> 
 
             <!-- log in form-->
             <div id="login">
                 <input type="text" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
             </div>
         </header>
 
 
         <!-- Navigation Bar-->
         <nav> 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="img_gallery.html">Gallery</a></li>
-                <li><a href="current_members.html">Current Members</a></li>
-                <li><a href="event_calendar.html">Events</a></li>
-                <li class="active"><a href="contact_us.html">Contact Us</a></li>
-                <li><a href="news.html">News</a></li>
-            </ul>
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="active">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="nav_button">Books</div></a>
         </nav>
 
         <main> 
@@ -75,7 +76,7 @@
             <!-- Shows the latest tweets from openAI-->
             <div id="right-col">
                 <h3>Latest Tweets</h3>
-                <a class="twitter-timeline" data-lang="en" data-height="500" href="https://twitter.com/OpenAI?ref_src=twsrc%5Etfw">Tweets by OpenAI</a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                <a class="twitter-timeline" data-lang="en" data-height="750" data-theme="dark" href="https://twitter.com/CyberpunkGame?ref_src=twsrc%5Etfw">Tweets by CyberpunkGame</a> <script async src="https://platform.twitter.com/widgets.js"></script>
             </div>
         </main>
 
@@ -83,5 +84,8 @@
             <!-- Copyright-->
             <p>Copyright Corey Gardner</p>
         </footer>
+
+        <!--Loads the script adding the highlight to the navbar-->
+        <script src="scripts/script.js"></script>
     </body>
 </html>

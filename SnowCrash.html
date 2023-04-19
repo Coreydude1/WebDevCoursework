@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cyberpunk Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header> 
+            <!-- Logo and Title-->
+            <img src="images/Logo.png" alt="Arasaka Logo" id="logo">
+            <h1 id="title">Cyberpunk Society</h1> 
+
+            <!-- log in form-->
+            <div id="login">
+                <input type="text" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
+            </div>
+        </header>
+
+        <!-- Navigation Bar-->
+        <nav> 
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="active">Books</div></a>
+        </nav>
+
+        <main> 
+            <!--Stores the books cover, title, and body of text-->
+            <div id="book">
+                <img class="book-cover" src="images/SnowCrash.jpg" alt="Cover of Snow Crash">
+                <h3 id="book-title">Snow Crash</h3>
+                <p>Snow Crash is a science fiction novel written by Neal Stephenson and first published in 1992. The novel is set in a dystopian future where society has been fractured, and the world is ruled by powerful corporations that control the world's wealth and resources. <br><br>At the heart of the novel is the character of Hiro Protagonist, a freelance hacker and swordsman who navigates a world where virtual reality has become a dominant force in everyday life. Hiro works as a pizza deliveryman for the Mafia, but his real passion is hacking and exploring the Metaverse, a virtual reality where people can interact and do business. <br><br>When a new drug called Snow Crash starts infecting users, Hiro finds himself embroiled in a dangerous conspiracy that threatens to destroy the Metaverse and the real world. Along the way, he meets a host of fascinating characters, including Y.T., a teenage courier and Hiro's ally in the real world, and Raven, a terrifying enforcer who is determined to use Snow Crash to his own ends. <br><br>Stephenson's writing in Snow Crash is fast-paced and action-packed, blending elements of science fiction, cyberpunk, and satire to create a thrilling and thought-provoking narrative. The novel's world-building is exceptional, presenting a vision of the future that is both familiar and alien, and exploring themes of power, technology, and the nature of reality. <br><br>One of the most significant contributions of Snow Crash is its anticipation of the virtual reality revolution. Stephenson's Metaverse has proved to be incredibly prescient, and many of the concepts and ideas presented in the novel have since become a reality. From virtual reality headsets to online gaming and social media, the influence of Snow Crash on the development of the internet and modern technology is undeniable. <br><br>The characters in Snow Crash are also memorable and well-drawn, with unique personalities and motivations that make them stand out. Y.T. is a particular highlight, a street-smart and capable teenager who is more than a match for the dangerous world she inhabits. Hiro is also a compelling protagonist, a flawed but charismatic hero who is driven by a desire to uncover the truth about Snow Crash and its effects on society. <br><br>Snow Crash has received widespread critical acclaim and has won several science fiction awards, including the Locus Award and the British Science Fiction Association Award. Its impact on science fiction and popular culture has been significant, with many of its ideas and concepts influencing countless works of literature, film, and video games. <br><br>In conclusion, Snow Crash is a mind-bending thriller that combines elements of science fiction, cyberpunk, and satire to create a unique and thought-provoking narrative. Its world-building, characters, and themes continue to captivate readers today, and its influence on the development of technology and popular culture cannot be overstated. Snow Crash is a must-read for anyone interested in science fiction or the impact of technology on society.</p>
+            </div>
+
+            <!--Stores any aditional media(YouTube/Twitter) relevant to the book-->
+            <div id="book-media">
+                <h3>See more here.</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RZhGCm7an4c" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Copyright-->
+            <p>Copyright Corey Gardner</p>
+        </footer>
+        
+        <!--Loads the script adding the highlight to the navbar-->
+        <script src="scripts/script.js"></script>
+        <!--Loads the script adding the padding to the title-->
+        <script src="scripts/book.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cyberpunk Society</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/main.css">
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header> 
+            <!-- Logo and Title-->
+            <img src="images/Logo.png" alt="Arasaka Logo" id="logo">
+            <h1 id="title">Cyberpunk Society</h1> 
+
+            <!-- log in form-->
+            <div id="login">
+                <input type="text" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password">
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
+            </div>
+        </header>
+
+        <!-- Navigation Bar-->
+        <nav> 
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="active">Books</div></a>
+        </nav>
+
+        <main> 
+            <!--Library contains all of the books the page has-->
+            <div id = "library-container">
+                <!--Title for the Library-->
+                <h3 id="bookHeader">Recommended Cyberpunk books</h3>
+
+                <!--The book container will store a books cover, title, summary, and a link to the books page-->
+                <div class="book-container">
+                    <a href="SnowCrash.html">
+                        <img class="book-cover" src="images/SnowCrash.jpg" alt="Cover of Snow Crash">
+                        <h3>Snow Crash</h3>
+                        <p>Snow Crash is a science fiction novel by the American writer Neal Stephenson, published in 1992. Like many of Stephenson's novels, its themes include history, linguistics, anthropology, archaeology, religion, computer science, politics, cryptography, memetics, and philosophy.</p>
+                    </a>
+                </div>
+
+                <div class="book-container">
+                    <a href="do-androids-dream-of-electric-sheep.html">
+                        <img class="book-cover" src="images/do-androids-dream-of-electric-sheep-omnibus-1.png" alt="Cover of Do Andoids Dream of Electric Sheep?">
+                        <h3>Do Androids Dream of Electric Sheep?</h3>
+                        <p>Do Androids Dream of Electric Sheep? is a dystopian science fiction novel by American writer Philip K. Dick, first published in 1968. The novel is set in a post-apocalyptic San Francisco, where Earth's life has been greatly damaged by a nuclear global war, leaving most animal species endangered or extinct.</p>
+                    </a>
+                </div>
+
+                <div class="book-container">
+                    <a href="Neuromancer.html">
+                        <img class="book-cover" src="images/Neuromancer-Cover.png" alt="Cover of Neuromancer">
+                        <h3>Neuromancer</h3>
+                        <p>Neuromancer is a 1984 science fiction novel by American-Canadian writer William Gibson. Considered one of the earliest and best-known works in the cyberpunk genre, it is the only novel to win the Nebula Award, the Philip K. Dick Award, and the Hugo Award.</p>
+                    </a>
+                </div>
+
+                <!--Links to the page to suggest a book to add to the Library-->
+                <a id="book-adder" href="addBook.html">
+                    <div id="add-book">
+                        <p>Add Book</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <!-- Copyright-->
+            <p>Copyright Corey Gardner</p>
+        </footer>
+        
+        <!--Loads the script adding the highlight to the navbar-->
+        <script src="scripts/script.js"></script>
+    </body>
+</html>

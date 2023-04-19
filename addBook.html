@@ -22,55 +22,43 @@
             </div>
         </header>
 
-
         <!-- Navigation Bar-->
         <nav> 
             <a href="index.html"><div class="nav_button">Home</div></a>
             <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
-            <a href="current_members.html"><div class="active">Current Members</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
             <a href="event_calendar.html"><div class="nav_button">Events</div></a>
             <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
             <a href="news.html"><div class="nav_button">News</div></a>
-            <a href="books.html"><div class="nav_button">Books</div></a>
+            <a href="books.html"><div class="active">Books</div></a>
         </nav>
 
+
         <main> 
-            <!--Stores all the members of the society-->
-            <div class="container">
-                <div class="row">
-                    
-                    <!--Each member will have a title, avatar, and their name-->
-                    <div class="col-sm avatar-container">
-                        <h5>Captain</h5>
-                        <img src="images/Avatar1.png" class="avatar" alt="Avatar of a animal skull with roses">
-                        <p>Hiro Protaganist</p>
-                    </div>
-                    <div class="col-sm avatar-container">
-                        <h5>Vice-Captain</h5>
-                        <img src="images/Avatar2.png" class="avatar" alt="Avatar of a smiling ghost in a shell">
-                        <p>Judy Alvarez </p>
-                    </div>
-                    <div class="col-sm avatar-container">
-                        <h5>Tresurer</h5>
-                        <img src="images/Avatar3.png" class="avatar" alt="Avatar of a Wolf">
-                        <p>Rick Deckard</p>
-                    </div>
-                    <div class="col-sm avatar-container">
-                        <h5>Secretary</h5>
-                        <img src="images/Avatar4.png" class="avatar" alt="Avatar of a smiling Fox">
-                        <p>Molly Millions</p>
-                    </div>
-                    <div class="col-sm avatar-container">
-                        <h5>Liaison</h5>
-                        <img src="images/Avatar5.png" class="avatar" alt="Avatar of a tree">
-                        <p>Wintermute</p>
-                    </div>
-                </div>
-            </div>
+            <!--Text explaining what the form does-->
+            <h3>Submit a Book to be added</h3>
+            <p>Please use the form below to suggest a book to be added to the website.</p>
+
+            <!--Form getting the title and author of a book-->
+            <form>
+                <fieldset>
+                    <label for="book-title">Title  : </label>
+                    <input type="text" id="book-title" value=""><br>
+
+                    <label for="author">Author  : </label>
+                    <input type="text" id="author" value=""><br>
+                    <br>
+
+                    <button id="send" type="button" onclick="send_form('form_outcome', 'Thank you for the submission. Following moderation we will add your book to the website.')" tabindex=0>Submit</button>
+                </fieldset>
+            </form>
+
+            <!--Shows the message from the forms-->
+            <p id='form_outcome'></p>
         </main>
 
         <footer>
-            <!--Copyright-->
+            <!-- Copyright-->
             <p>Copyright Corey Gardner</p>
         </footer>
 
