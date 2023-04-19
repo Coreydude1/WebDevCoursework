@@ -1,28 +1,40 @@
+//When the window first loads it will run highlightNavigation function
 highlightNavigation();
 
 //logged In is used to track if the user is logged in
 var loggedIn = false;
 
+//Adds a border to the navigation buttons when hovered over
+//NOTE does not include the curtrently active button
 function highlightNavigation(){
-    var elements = document.getElementsByClassName("nav_button");
-    for(let element of elements){
-        element.addEventListener("mouseover", function(){
+    //Get all buttons
+    var buttons = document.getElementsByClassName("nav_button");
 
-            element.style="border: solid 3px #78d0da;background-color: #a2372f;"
-            
+    //Loop through all buttons
+    for(let button of buttons){
+        //Add the mouse over function
+        button.addEventListener("mouseover", function(){
+            button.style="border: solid 3px #78d0da;background-color: #a2372f;"
         });
             
-        element.addEventListener("mouseout", function(){
-            
-            element.style="border: solid 3px #5d1309;"
-            
+        //Add the mouse out function
+        button.addEventListener("mouseout", function(){
+            //Set the border to blend in with the background
+            //Makes border invisible and prevents the button from moving during mouseover
+            button.style="border: solid 3px #5d1309;"
         });
     }
 }
 
 function send_form(id, text){
-    //Changes html id to have updated text
-    document.getElementById(id).innerHTML=text;
+    //Checks if the user is logged in
+    if(loggedIn){
+        //Changes html id to have updated text
+        document.getElementById(id).innerHTML=text;
+    } else {
+        //Displays error if the user is not logged in
+        alert("Please log in to submit a form.");
+    }
 }
 
 function attemptLogin(emailId, passwordId){

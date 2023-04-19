@@ -20,22 +20,20 @@
             <div id="login">
                 <input type="text" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
             </div>
         </header>
 
 
         <!-- Navigation Bar-->
         <nav> 
-            <ul>
-                <a href="index.html"><li class="nav_button">Home</li></a>
-                <a href="img_gallery.html"><li class="nav_button">Gallery</li></a>
-                <a href="current_members.html"><li class="nav_button">Current Members</li></a>
-                <a href="event_calendar.html"><li class="nav_button">Events</li></a>
-                <a href="contact_us.html"><li class="active">Contact Us</li></a>
-                <a href="news.html"><li class="nav_button">News</li></a>
-                <a href="books.html"><li class="nav_button">Books</li></a>
-            </ul>
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="active">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="nav_button">Books</div></a>
         </nav>
 
         <main> 
@@ -78,7 +76,7 @@
             <!-- Shows the latest tweets from openAI-->
             <div id="right-col">
                 <h3>Latest Tweets</h3>
-                <a class="twitter-timeline" data-lang="en" data-height="750" data-theme="dark" href="https://twitter.com/CyberpunkGame?ref_src=twsrc%5Etfw">Tweets by CyberpunkGame</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" data-lang="en" data-height="750" data-theme="dark" href="https://twitter.com/CyberpunkGame?ref_src=twsrc%5Etfw">Tweets by CyberpunkGame</a> <script async src="https://platform.twitter.com/widgets.js"></script>
             </div>
         </main>
 
@@ -87,6 +85,7 @@
             <p>Copyright Corey Gardner</p>
         </footer>
 
+        <!--Loads the script adding the highlight to the navbar-->
         <script src="scripts/script.js"></script>
     </body>
 </html>

@@ -18,25 +18,24 @@
             <div id="login">
                 <input type="text" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
             </div>
         </header>
 
         <!-- Navigation Bar-->
         <nav> 
-            <ul>
-                <a href="index.html"><li class="nav_button">Home</li></a>
-                <a href="img_gallery.html"><li class="active">Gallery</li></a>
-                <a href="current_members.html"><li class="nav_button">Current Members</li></a>
-                <a href="event_calendar.html"><li class="nav_button">Events</li></a>
-                <a href="contact_us.html"><li class="nav_button">Contact Us</li></a>
-                <a href="news.html"><li class="nav_button">News</li></a>
-                <a href="books.html"><li class="nav_button">Books</li></a>
-            </ul>
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="active">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="nav_button">Events</div></a>
+            <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="nav_button">Books</div></a>
         </nav>
 
         <main> 
             <!--Image Gallery-->
+            <!--Gallery will be 3 images wide-->
             <div id = "img-gallery" class = "container">
                 <div class="row">
                     <div class="col-sm">
@@ -57,7 +56,7 @@
                         <img src="images/ghostintheshell.png" alt="Image of robot from ghost in the shell" class="gallery-img">
                     </div>
                     <div class="col-sm">
-                        <img src="images/Arasaka Characte4rs.png" alt="Characters from Arasaka in Cyberpunk 2077" class="gallery-img">
+                        <img src="images/ArasakaCharacters.png" alt="Characters from Arasaka in Cyberpunk 2077" class="gallery-img">
                     </div>
                 </div>
                 <div class="row">
@@ -71,6 +70,17 @@
                         <img src="images/City3.jpg" alt="Man overlooking Cyberpunk City" class="gallery-img">
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="images/do-androids-dream-of-electric-sheep-omnibus-1.png" alt="Cover of Do Andoids Dream of Electric Sheep?" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/SnowCrash.jpg" alt="Cover of Snow Crash" class="gallery-img">
+                    </div>
+                    <div class="col-sm">
+                        
+                    </div>
+                </div>
             </div>
         </main>
 
@@ -79,15 +89,16 @@
             <p>Copyright Corey Gardner</p>
         </footer>
         
+        <!--Loads the script adding the highlight to the navbar-->
         <script src="scripts/script.js"></script>
         <script>
             //Gets all gallery images
             var elements = document.getElementsByClassName("gallery-img");
 
-            //loops through all images adding the mouseover and mouseout functions
+            //loops through all images adding the mouseover and mouseout functions causing a border to appear when the mouse is over an image
             for(let element of elements){
                 element.addEventListener("mouseover", function(){
-                    element.style="border: solid #003062 4px;"
+                    element.style="border: solid #7ddde8 4px;"
                     for(let otherElement of elements){
                         if(element != otherElement){
                             otherElement.style="filter: blur(5px);"

@@ -18,21 +18,19 @@
             <div id="login">
                 <input type="text" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="Password">
-                <button type="button" onclick='attemptLogin("email", "password")'>Submit</button>
+                <button type="button" onclick='attemptLogin("email", "password")'>Login</button>
             </div>
         </header>
 
         <!-- Navigation Bar-->
-        <nav>
-            <ul>
-                <a href="index.html"><li class="nav_button">Home</li></a>
-                <a href="img_gallery.html"><li class="nav_button">Gallery</li></a>
-                <a href="current_members.html"><li class="nav_button">Current Members</li></a>
-                <a href="event_calendar.html"><li class="active">Events</li></a>
-                <a href="contact_us.html"><li class="nav_button">Contact Us</li></a>
-                <a href="news.html"><li class="nav_button">News</li></a>
-                <a href="books.html"><li class="nav_button">Books</li></a>
-            </ul>
+        <nav> 
+            <a href="index.html"><div class="nav_button">Home</div></a>
+            <a href="img_gallery.html"><div class="nav_button">Gallery</div></a>
+            <a href="current_members.html"><div class="nav_button">Current Members</div></a>
+            <a href="event_calendar.html"><div class="active">Events</div></a>
+            <a href="contact_us.html"><div class="nav_button">Contact Us</div></a>
+            <a href="news.html"><div class="nav_button">News</div></a>
+            <a href="books.html"><div class="nav_button">Books</div></a>
         </nav>
 
         <main> 
@@ -166,6 +164,7 @@
             <p>Copyright Corey Gardner</p>
         </footer>
 
+        <!--Loads the script adding the highlight to the navbar-->
         <script src="scripts/script.js"></script>
     </body>
 </html>

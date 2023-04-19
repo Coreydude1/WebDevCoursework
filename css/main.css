@@ -9,7 +9,7 @@ body{
 header{
     top: 0;
     background-color: #5d1309;
-    padding: 16px;
+    padding: 20px;
     margin: 0px 15px 0px 15px;
 }
 
@@ -35,20 +35,22 @@ p {
 
 main{
     background-color: #5d1309;
-    padding: 10px;
+    padding: 20px;
     overflow: hidden;
     margin: 0px 15px 0px 15px;
 }
 
 aside{
     background-color: #5d1309;
-    padding: 10px;
+    padding: 20px;
     margin: 15px;
 }
 
 nav{
     background-color: #5d1309;
     margin: 0px 15px 0px 15px;
+    overflow: hidden;
+    height: 100%;
 }
 
 footer{
@@ -65,21 +67,21 @@ footer p{
 }
 
 /* Navigation Bar */
-nav li{
-    border: solid 3px #5d1309;
+nav div{
+    border: solid 3px #5D1309;
     background-color: #5d1309;
     list-style-type: None;
     float: left;
     width: 14%;
     padding: 18px;
-    margin-right: 2px;
+    min-width: 145px;
 }
 
-nav li a{
+nav div a{
     text-decoration: None;
 }
 
-nav ul{
+#nav-bar{
     margin: 0;
     padding: 0;
     height: 66px;
@@ -132,12 +134,23 @@ fieldset {
     width: 80%;
     float: left;
     padding-left: 40px;
-    overflow: hidden;
-    display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical;
-    word-wrap: break-word;
-    text-overflow: ellipsis;
-    height: 200px;
+    height: 190px;
     margin-bottom: 30px;
+
+    /*
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    */
+}
+
+.news-summary p {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .news-summary h5{
@@ -221,12 +234,12 @@ fieldset {
 }
 
 /* News Article Formatting */
-#column-box {
+.column-box {
     margin: 3%;
     padding: 10px;
 }
 
-#column-box img{
+.column-box img{
     object-fit: cover;
     width: 200px;
     height: 200px;
@@ -251,6 +264,7 @@ fieldset {
 
 #article-title{
     float: left;
+    margin-bottom: 30px;
 }
 
 #article-body{
@@ -261,16 +275,100 @@ fieldset {
     background-color: #a2372f;
 }
 
+
+/*Book Page*/
 #bookHeader{
     margin-bottom: 40px;
+    align-self: flex-start;
+    width: 100%;
+    text-align: center;
+}
+
+#library-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .book-container{
-    float: left;
-    align-content: center;
-    width: 30%;
+    width: 33%;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
 }
 
-.book-container img{
-    width: 80%;
+.book-container a{
+    text-decoration: none;
+}
+
+.book-cover{
+    width: 335px;
+    height: 500px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.book-container h3{
+    margin-top: 15px;
+}
+
+#book{
+    padding: 10px;
+    width: 100%;
+}
+
+#book img{
+    float: right;
+}
+
+#book-title{
+    float: left;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#add-book p{
+    margin: 0;
+}
+
+#book-adder {
+    color: #FFFFFF;
+    padding: 12px 16px;
+    background-color: #a2372f;
+    text-align: center;
+    text-decoration: none;
+    border: #7ddde8 solid 2px;
+}
+
+#book-media{
+    float: left;
+    padding: 20px;
+}
+
+
+.avatar{
+    width: 200px;
+    height: 200px;
+}
+
+.avatar-container{
+    text-align: center;
+}
+
+@media screen and (max-width: 1080px) {   
+    nav div{
+        width: 28%;
+    }
+
+    nav{
+        height: 198px;
+    }
+}
+
+@media screen and (max-width: 880px) {   
+    #login {
+        display: none;
+    }
 }
